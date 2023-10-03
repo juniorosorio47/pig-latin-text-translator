@@ -79,7 +79,7 @@ const translatePhrase = (phrase) => {
     return result
 }
 
-if (process.argv.length < 3) {
+if (process.argv.length < 3 || process.argv.length > 3) {
     console.log('Please enter the text you want to translate, enclosed in either double or single quotes.')
     console.log("Example: \"Hello, World!\" or 'Hey buddy, how are you?'")
 } else {
